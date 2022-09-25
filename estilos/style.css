@@ -1,0 +1,407 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@font-face {
+    font-family: 'SuperHerois';
+    src: url(../fonts/AVENGEANCE\ MIGHTIEST\ AVENGER.otf) format('opentype') ,url(../fonts/AVENGEANCE\ MIGHTIEST\ AVENGER.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Heroes';
+    src: url(../fonts/Heroes.otf) format('opentype'), url(../fonts/Heroes.ttf) format('truetype');
+    font-weight: normal;
+}
+
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+    --fonte4: 'Source Sans Pro', sans-serif;
+    --fonte5: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0px;
+}
+
+html, body {
+    font-family: var(--fonte1);
+    /* background-color: #F0A36F; */
+    background-color: #1A1815;
+}
+
+header {
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  #ffd143 0%, rgba(255,145,83,1) 90% );
+    padding: 5vh;
+    font-size: 2.5vh;
+    box-shadow: 0px 1px 6px #0000007f;
+}
+
+header > h1 {
+    text-align: center;
+    font-family: 'SuperHerois';
+    color: white;
+}
+
+header > h1::after {
+    content: '\0020 \1F9B8';
+}
+
+main {
+    margin: 20px auto;
+    min-width: 320px;
+    max-width: 1200px;
+    font-size: 1em;
+}
+
+section {
+    font-family: var(--fonte4);
+    font-weight: 400;
+    margin: auto;
+    padding: 10px 40px 20px 40px;
+    border-radius: 5px;
+    background-color: #FFE38F;
+}
+
+section > div {
+    background-color: #FFA25F;
+    box-shadow: 0px 2px 6px #0000006a;
+    margin-bottom: 10vh;
+    border-radius: 20px;
+}
+
+section > h1 {
+    font-family: 'Heroes';
+    font-weight: normal;
+    text-align: center;
+    margin: 10px auto;
+    max-width: 1000px;
+    font-size: 6vh;
+    padding: 2px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.201);
+}
+
+section > div p {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+    line-height: 1.5rem;
+    font-size: 1.15em;
+}
+
+picture {
+    display: block;
+}
+
+section > div picture img {
+    display: block;
+    max-width: 90%;
+    min-height: 320px;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px #0000005e;
+}
+
+article {
+    font-family: var(--fonte5);
+}
+
+article > h2 {
+    color: white;
+    font-family: var(--fonte3);
+    font-size: 2em;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    font-variant: small-caps;
+    padding: 5px;
+    max-width: 40vw;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+article > div {
+    height: 600px;
+}
+
+article > div#img1, div#img2, div#img3, div#img4, div#img5, div#img6, div#img7, div#img8, div#img9, div#img10 {
+    border-radius: 10px 10px 0px 0px;
+}
+
+article > p {
+    color: white;
+    background-color: #0D0D0D;
+    padding: 6px;
+    margin-bottom: 10vh;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 2px 10px #000000a1;
+}
+
+article > p.marginzero {
+    margin-bottom: 0px;
+}
+
+article > div p {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    max-width: 50vw;
+    padding: 10px;
+    line-height: 1.5em;
+    border-radius: 10px 20px;
+    font-weight: normal;
+    text-align: justify;
+}
+
+a {
+    color: #F2B705;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ed9a00;
+    text-decoration: underline;
+    transition-duration: 0.4s;
+}
+
+a:active {
+    color: #472e00;  
+}
+
+a:visited {
+    color: #c08519;
+}
+
+a:active:visited {
+    color: #472e00;   
+}
+
+a:hover:visited {
+    color: #F29F05;
+    text-decoration: underline;
+}
+
+a.invalidlink:link{
+    text-decoration: line-through;
+    color: #ad0f22;
+}
+
+a.invalidlink:hover {
+    color: #cd1429;
+}
+
+article.maravilha > h2 {
+    background-color: #ffc6daaf;
+    border: 2px solid #d490a8af;
+}
+
+article.maravilha > div {
+    border: 5px solid #e0b2c2;
+}
+
+
+article.maravilha > div#img1 {
+    background-image: url('../images/maravilhah500.webp');
+
+}
+
+div.imagem {
+    color: white;
+    position: relative;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: 0px 2px 10px #000000a1;
+}
+
+article.maravilha > div p {
+    background-color: #ad89969c;
+    border: 2px solid #d0afbc;
+}
+
+article.ferro > h2 {
+    background-color: #ad0f22;
+    border: 2px solid #ffe046;
+}
+
+article.ferro > div {
+    border: 5px solid #F2CB05;
+}
+
+article.ferro > div#img2 {
+    background-image: url('../images/ironman.webp');
+}
+
+article.ferro > div p {
+    background-color: #fac12357;
+    border: 2px solid #c13a3a;
+}
+
+article.miranha > h2 {
+    background-color: #ad0f22;
+    border: 2px solid #251973c9;
+}
+
+article.miranha > div {
+    border: 5px solid #251973;
+}
+
+article.miranha > div#img3 {
+    background-image: url('../images/miranha.jpg');
+}
+
+article.miranha > div p {
+    background-color: #03075975;
+    border: 2px solid #d2cbffc0;
+}
+
+article.batman > h2 {
+    background-color: #011126;
+    border: 2px solid #256288;
+}
+
+article.batman > div {
+    border: 5px solid #011126;
+}
+
+article.batman > div#img4 {
+    background-image: url('../images/batman.jpg');
+}
+
+article.batman > div p {
+    background-color: #09293e6f;
+    border: 2px solid #7266bfab;
+}
+
+article.hulk > h2 {
+    background-color: #0c8540;
+    border: 2px solid #104125;
+}
+
+article.hulk > div {
+    border: 5px solid #027333;
+}
+
+
+article.hulk > div#img5 {
+    background-image: url('../images/hulk.jpg.webp');
+}
+
+article.hulk > div p {
+    background-color: #2fa36158;
+    border: 2px solid #77af8f;
+}
+
+article.america > h2 {
+    background-color: #030759;
+    border: 2px solid #9e1928;
+}
+
+article.america > div {
+    border: 5px solid #030759;
+}
+
+article.america > div#img6 {
+    background-image: url('../images/america.jpg.webp');
+}
+
+article.america > div p {
+    background-color: #03075975;
+    border: 2px solid #9da1ffa1;
+}
+
+article.thor > h2 {
+    background-color: #59380E;
+    border: 2px solid #b6855a;
+}
+
+article.thor > div {
+    border: 5px solid #59380E;
+}
+
+article.thor > div#img7 {
+    background-image: url('../images/thor.jpg');
+}
+
+article.thor > div p {
+    background-color: #59380e6f;
+    border: 2px solid #A6978A;
+}
+
+article.flash > h2 {
+    background-color: #ad0f22;
+    border: 2px solid #ffe046;
+}
+
+article.flash > div {
+    border: 5px solid #ad0f22;
+}
+
+article.flash > div#img8 {
+    background-image: url('../images/flash.jpeg.webp');
+}
+
+article.flash > div p {
+    background-color: #cc25387d;
+    border: 2px solid #eac98c;
+}
+
+article.wolverine > h2 {
+    background-color: #F5960A;
+    border: 2px solid #021859;
+}
+
+article.wolverine > div {
+    border: 5px solid #F5960A;
+}
+
+article.wolverine > div#img9 {
+    background-image: url('../images/wolverine.jpg.webp');
+}
+
+article.wolverine > div p {
+    background-color: #e3993e91;
+    border: 2px solid #163953;
+}
+
+article.superman > h2 {
+    background-color: #030759;
+    border: 2px solid #ad0f22;
+}
+
+article.superman > div {
+    border: 5px solid #ad0f22;
+}
+
+article.superman > div#img10 {
+    background-image: url('../images/superman.jpg');
+}
+
+article.superman > div p {
+    background-color: #ffd4467d;
+    border: 2px solid #c13a3a;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    padding: 5px;
+    line-height: 1.2em;
+    text-align: center;
+}
