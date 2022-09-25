@@ -1,1 +1,1 @@
-Esse site foi criando com o intuíto de estudo, todos os créditos estão devidamente colocados!
+Esse site foi criando com o intuíto de estudo, todos os créditos estão devidamente mencionados!
